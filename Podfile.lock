@@ -1,0 +1,33 @@
+PODS:
+  - JSQMessagesViewController (7.1.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - MQTTKit (0.1.0-next)
+  - NCMB (2.2.1)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - MQTTKit (from `https://github.com/mobile-web-messaging/MQTTKit.git`)
+  - NCMB (from `https://github.com/NIFTYCloud-mbaas/ncmb_ios.git`)
+
+EXTERNAL SOURCES:
+  MQTTKit:
+    :git: https://github.com/mobile-web-messaging/MQTTKit.git
+  NCMB:
+    :git: https://github.com/NIFTYCloud-mbaas/ncmb_ios.git
+
+CHECKOUT OPTIONS:
+  MQTTKit:
+    :commit: 94926fb58df6b43d53040d656da441bb2de402e9
+    :git: https://github.com/mobile-web-messaging/MQTTKit.git
+  NCMB:
+    :commit: b71041e186ec98d06b0205b64b4e23a223c2ae03
+    :git: https://github.com/NIFTYCloud-mbaas/ncmb_ios.git
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: ca11f86fa68ca70835f05e169df9244147c1dc40
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  MQTTKit: 513ffc31464db7adeffefac986e228fdf6cd87e5
+  NCMB: 6633e8eb4635b0bb3a6891759d81eae1913f0794
+
+COCOAPODS: 0.36.3
