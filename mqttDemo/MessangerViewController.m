@@ -26,35 +26,9 @@
     //メッセージを格納するプロパティを初期化
     self.messageData = [[MessageData alloc] init];
     
-    
-    NCMBQuery *query = [NCMBQuery queryWithClassName:@"message"];
-    query.limit = 5;
-    [query orderByDescending:@"createDate"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (error){
-            NSLog(@"object find error:%@", error);
-        } else {
-            NSString *senderId = nil;
-            NSString *senderDisplayName = nil;
-            NSDate *postDate = nil;
-            NSString *text = nil;
-            //for (NCMBObject *object in objects) {
-            for (int i = (int)objects.count  - 1; i >= 0; i--){
-                NCMBObject *object = objects[i];
-                senderId = [object objectForKey:@"senderId"];
-                senderDisplayName = [object objectForKey:@"senderDisplayName"];
-                postDate = [object objectForKey:@"createDate"];
-                text = [object objectForKey:@"message"];
-                JSQMessage *message = [[JSQMessage alloc] initWithSenderId:senderId
-                                                         senderDisplayName:senderDisplayName
-                                                                      date:postDate
-                                                                      text:text
-                                       ];
-                NSLog(@"message:%@", message.text);
-                [self.messageData.messages addObject:message];
-                [self finishReceivingMessageAnimated:YES];
-            }
-        }
+    //メッセージの取得
+    [self.messageData getMessageData:^{
+        [self finishReceivingMessageAnimated:YES];
     }];
     
     //senderIdにUUIDを設定する
@@ -131,6 +105,11 @@
              }];
     
     self.inputToolbar.contentView.rightBarButtonItem = [JSQMessagesToolbarButtonFactory defaultSendButtonItem];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    //最近のメッセージを取得
 }
 
 - (void)viewWillDisappear:(BOOL)animated{

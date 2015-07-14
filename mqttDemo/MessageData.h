@@ -12,4 +12,6 @@
 
 @property (nonatomic) NSMutableArray *messages;
 
+- (void)getMessageData:(void (^)(void))blk;
+
 @end
