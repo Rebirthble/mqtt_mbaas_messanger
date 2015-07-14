@@ -26,11 +26,6 @@
     //メッセージを格納するプロパティを初期化
     self.messageData = [[MessageData alloc] init];
     
-    //メッセージの取得
-    [self.messageData getMessageData:^{
-        [self finishReceivingMessageAnimated:YES];
-    }];
-    
     //senderIdにUUIDを設定する
     self.senderId = [UIDevice currentDevice].identifierForVendor.UUIDString;
     
@@ -110,6 +105,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     //最近のメッセージを取得
+    [self.messageData getMessageData:^{
+        [self finishReceivingMessageAnimated:YES];
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
