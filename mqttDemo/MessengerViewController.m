@@ -1,16 +1,16 @@
 //
-//  MessangerViewController.m
+//  MessengerViewController.m
 //  mqttDemo
 //
 //  Created by SCI01433 on 2015/07/08.
 //  Copyright (c) 2015年 OkawaUki. All rights reserved.
 //
 
-#import "MessangerViewController.h"
+#import "MessengerViewController.h"
 
 #import <NCMB/NCMB.h>
 
-@implementation MessangerViewController
+@implementation MessengerViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -105,6 +105,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     //最近のメッセージを取得
+    //メッセージの取得
     [self.messageData getMessageData:^{
         [self finishReceivingMessageAnimated:YES];
     }];

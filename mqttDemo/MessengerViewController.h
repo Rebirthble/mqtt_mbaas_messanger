@@ -1,5 +1,5 @@
 //
-//  MessangerViewController.h
+//  MessengerViewController.h
 //  mqttDemo
 //
 //  Created by SCI01433 on 2015/07/08.
@@ -12,7 +12,7 @@
 #import <MQTTKit.h>
 #import <JSQMessagesViewController/JSQMessages.h>
 
-@interface MessangerViewController : JSQMessagesViewController<UIActionSheetDelegate>
+@interface MessengerViewController : JSQMessagesViewController<UIActionSheetDelegate>
 
 @property (nonatomic) MQTTClient *client;
 @property (nonatomic) MessageData *messageData;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MessangerViewController.h"
+#import "MessengerViewController.h"
 
 @interface ViewController ()
 
@@ -31,16 +31,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"MessangerView"]) {
-        MessangerViewController *messangerVC = [segue destinationViewController];
-        messangerVC.senderDisplayName = self.displayName.text;
+    if ([[segue identifier] isEqualToString:@"MessengerView"]) {
+        MessengerViewController *messengerVC = [segue destinationViewController];
+        messengerVC.senderDisplayName = self.displayName.text;
     }
 }
 
 - (IBAction)pushButtonStart:(id)sender {
     
-    //MessangerViewへの画面遷移を行う
-    [self performSegueWithIdentifier:@"MessangerView" sender:self];
+    //MessengerViewへの画面遷移を行う
+    [self performSegueWithIdentifier:@"MessengerView" sender:self];
 }
 
 @end

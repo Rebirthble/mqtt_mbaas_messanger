@@ -51,17 +51,17 @@
                     <navigationItem key="navigationItem" id="hL3-lL-K5P"/>
                     <connections>
                         <outlet property="displayName" destination="Sye-lZ-42g" id="wQN-CP-HGi"/>
-                        <segue destination="QCd-2Z-QhS" kind="show" identifier="MessangerView" id="W1W-BD-uRQ"/>
+                        <segue destination="QCd-2Z-QhS" kind="show" identifier="MessengerView" id="W1W-BD-uRQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1212" y="323"/>
         </scene>
-        <!--Messanger View Controller-->
+        <!--Messenger View Controller-->
         <scene sceneID="vLG-Du-Lkh">
             <objects>
-                <viewController id="QCd-2Z-QhS" customClass="MessangerViewController" sceneMemberID="viewController">
+                <viewController id="QCd-2Z-QhS" customClass="MessengerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jUP-L0-aWZ"/>
                         <viewControllerLayoutGuide type="bottom" id="63q-B1-Lmd"/>

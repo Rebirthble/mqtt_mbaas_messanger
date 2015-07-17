@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B99412CC6380B168CD7B4A5 /* libPods-mqttDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB85A7E1E5D12374EACA180 /* libPods-mqttDemo.a */; };
 		5D2A4E651B4CB403001F1DED /* MessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A4E641B4CB403001F1DED /* MessageData.m */; };
-		5D2A4E681B4CB849001F1DED /* MessangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A4E671B4CB849001F1DED /* MessangerViewController.m */; };
+		5D2A4E681B4CB849001F1DED /* MessengerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A4E671B4CB849001F1DED /* MessengerViewController.m */; };
 		5D4420271B3A896700276EF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4420261B3A896700276EF8 /* main.m */; };
 		5D44202A1B3A896700276EF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4420291B3A896700276EF8 /* AppDelegate.m */; };
 		5D44202D1B3A896700276EF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D44202C1B3A896700276EF8 /* ViewController.m */; };
@@ -35,8 +35,8 @@
 		06C89C523B51F0D97FF9AE73 /* Pods-mqttDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mqttDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mqttDemo/Pods-mqttDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5D2A4E631B4CB403001F1DED /* MessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageData.h; sourceTree = "<group>"; };
 		5D2A4E641B4CB403001F1DED /* MessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageData.m; sourceTree = "<group>"; };
-		5D2A4E661B4CB849001F1DED /* MessangerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessangerViewController.h; sourceTree = "<group>"; };
-		5D2A4E671B4CB849001F1DED /* MessangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessangerViewController.m; sourceTree = "<group>"; };
+		5D2A4E661B4CB849001F1DED /* MessengerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessengerViewController.h; sourceTree = "<group>"; };
+		5D2A4E671B4CB849001F1DED /* MessengerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessengerViewController.m; sourceTree = "<group>"; };
 		5D4420211B3A896700276EF8 /* mqttDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mqttDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4420251B3A896700276EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D4420261B3A896700276EF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 				5D4420241B3A896700276EF8 /* Supporting Files */,
 				5D2A4E631B4CB403001F1DED /* MessageData.h */,
 				5D2A4E641B4CB403001F1DED /* MessageData.m */,
-				5D2A4E661B4CB849001F1DED /* MessangerViewController.h */,
-				5D2A4E671B4CB849001F1DED /* MessangerViewController.m */,
+				5D2A4E661B4CB849001F1DED /* MessengerViewController.h */,
+				5D2A4E671B4CB849001F1DED /* MessengerViewController.m */,
 				5DC6A4BA1B4D5A4400DEA94B /* NCMBSetting.plist */,
 				5DC2E9451B54A06B000616E6 /* MQTTSetting.plist */,
 			);
@@ -297,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D44202D1B3A896700276EF8 /* ViewController.m in Sources */,
-				5D2A4E681B4CB849001F1DED /* MessangerViewController.m in Sources */,
+				5D2A4E681B4CB849001F1DED /* MessengerViewController.m in Sources */,
 				5D44202A1B3A896700276EF8 /* AppDelegate.m in Sources */,
 				5D4420271B3A896700276EF8 /* main.m in Sources */,
 				5D2A4E651B4CB403001F1DED /* MessageData.m in Sources */,
